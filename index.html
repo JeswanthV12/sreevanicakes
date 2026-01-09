@@ -3,30 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <meta name="description" content="A simple static website." />
-  <link rel="icon" href="/favicon.ico" />
+  <title>Sreevani Cakes | Home Bakery</title>
+  <meta name="description" content="Fresh homemade cakes for birthdays, weddings, and special occasions." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Hello 👋</h1>
-    <p>Welcome to my site.</p>
+  <!-- Header -->
+  <header class="header">
+    <h1>Sreevani Cakes</h1>
+    <p>Fresh • Homemade • Made with Love</p>
   </header>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>Put your content here.</p>
-    </section>
-  </main>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#cakes">Cakes</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <footer>
-    <small>&copy; <span id="year"></span> My Website</small>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Delicious Cakes for Every Occasion</h2>
+    <p>Custom cakes made fresh from our home bakery</p>
+    <button onclick="scrollToContact()">Order Now</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      We are a home-based bakery specializing in freshly baked cakes made
+      with high-quality ingredients. Every cake is made to order with care
+      and creativity.
+    </p>
+  </section>
+
+  <!-- Cakes -->
+  <section id="cakes" class="section">
+    <h2>Our Cakes</h2>
+    <div class="cake-list">
+      <div class="cake-card">🎂 Birthday Cakes</div>
+      <div class="cake-card">🍰 Custom Cakes</div>
+      <div class="cake-card">🧁 Cupcakes</div>
+      <div class="cake-card">💍 Wedding Cakes</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact & Orders</h2>
+    <p>📞 Phone: <strong>+1 (xxx) xxx-xxxx</strong></p>
+    <p>📧 Email: <strong>orders@sreevanicakes.com</strong></p>
+    <p>📍 Location: Home Bakery (Pickup Only)</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Sreevani Cakes. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
