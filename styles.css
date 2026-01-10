@@ -2,12 +2,90 @@
     font-family: 'Josefin Sans', sans-serif;
 }*/
 
-
 body {
     background: url(images/hook.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Arial', sans-serif;
 }
 
+/* Improve readability with background overlay */
+.bg-light {
+    background-color: rgba(248, 249, 250, 0.95) !important;
+}
+
+.services-section {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-section {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Card styling */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Navigation styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #8B4513;
+    border-color: #8B4513;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D;
+    border-color: #A0522D;
+}
+
+/* Gallery hover effect */
+.card img {
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.menu-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-box h4 {
+    color: #8B4513;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 0.5rem;
+}
+
+.menu-box h4:first-child {
+    margin-top: 0;
+}
+
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.menu-box li {
+    padding: 0.3rem 0;
+    color: #333;
+}
+
+.custom-section {
+    border-top: 2px solid #8B4513;
+}
